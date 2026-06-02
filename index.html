@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Pooja Kada — Computer Science Engineer specializing in Data Analytics, Artificial Intelligence, and Software Development." />
+  <meta name="author" content="Kada Pooja Sai Srilekha" />
+  <title>Pooja Kada · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A8%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">
+      <span class="logo-mark">PK</span>
+      <span class="logo-text">Pooja&nbsp;Kada</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle light / dark">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.2" y1="4.2" x2="5.6" y2="5.6"/><line x1="18.4" y1="18.4" x2="19.8" y2="19.8"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.2" y1="19.8" x2="5.6" y2="18.4"/><line x1="18.4" y1="5.6" x2="19.8" y2="4.2"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-inner reveal">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span> Available for internships &amp; collaborations
+        </div>
+        <h1 class="hero-name">
+          <span class="grad-text">Pooja Kada</span>
+        </h1>
+        <p class="hero-headline">
+          Aspiring <span class="hl">Computer Science Engineer</span> crafting solutions at the intersection of
+          <span class="hl">Data Analytics</span>, <span class="hl">Artificial Intelligence</span> &amp; <span class="hl">Software Development</span>.
+        </p>
+        <p class="hero-sub">
+          Turning data into insight and ideas into elegant, production-ready software.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="https://github.com/srilehkakada-dot" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.8 18.3 5.1 18.3 5.1c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-glass" href="https://www.linkedin.com/in/pooja-kada-733462376" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="#contact">Get in touch →</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num" data-count="8.99">0</span><span class="stat-label">CGPA</span></div>
+          <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-label">Certifications</span></div>
+          <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Internships</span></div>
+          <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Projects</span></div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <span class="eyebrow">01 — Introduction</span>
+        <h2 class="section-title">About <span class="grad-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass reveal">
+          <p>
+            I'm <strong>Kada Pooja Sai Srilekha</strong>, a Computer Science Engineering undergraduate at
+            <strong>Aditya College of Engineering &amp; Technology</strong> (B.Tech, 2028) with a passion for
+            building intelligent, data-driven software.
+          </p>
+          <p>
+            I love transforming raw data into actionable insight, designing clean web experiences, and
+            exploring emerging AI technologies. Through multiple internships and hands-on projects, I've
+            sharpened my skills across the full development lifecycle — from analytics dashboards to
+            production-ready web apps.
+          </p>
+          <p>
+            I'm eager to leverage my technical knowledge, problem-solving abilities, and project experience
+            to contribute to organizational success while continuously growing as an engineer.
+          </p>
+          <ul class="about-facts">
+            <li><span>🎓</span> B.Tech CSE · CGPA 8.99</li>
+            <li><span>📍</span> Andhra Pradesh, India</li>
+            <li><span>💡</span> Data Analytics · AI · Web Dev</li>
+            <li><span>📬</span> srilehka.kada@gmail.com</li>
+          </ul>
+        </div>
+        <div class="about-side reveal">
+          <div class="glass edu-card">
+            <h3>Education</h3>
+            <div class="timeline mini">
+              <div class="t-item">
+                <div class="t-dot"></div>
+                <div class="t-body">
+                  <h4>B.Tech — Computer Science</h4>
+                  <p class="t-org">Aditya College of Engineering &amp; Technology, Surampalem</p>
+                  <p class="t-meta">Expected May 2028 · CGPA 8.99</p>
+                </div>
+              </div>
+              <div class="t-item">
+                <div class="t-dot"></div>
+                <div class="t-body">
+                  <h4>Intermediate (MPC)</h4>
+                  <p class="t-org">Aditya Women's College, Kakinada</p>
+                  <p class="t-meta">Mar 2024 · 96%</p>
+                </div>
+              </div>
+              <div class="t-item">
+                <div class="t-dot"></div>
+                <div class="t-body">
+                  <h4>SSC</h4>
+                  <p class="t-org">Bhashyam Junior School, RC Puram</p>
+                  <p class="t-meta">May 2022 · 90%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="eyebrow">02 — Toolkit</span>
+        <h2 class="section-title">Skills &amp; <span class="grad-text">Expertise</span></h2>
+      </div>
+      <div class="skills-grid">
+        <div class="glass skill-cat reveal">
+          <h3><span class="skill-ico">⌨️</span> Programming</h3>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+        <div class="glass skill-cat reveal">
+          <h3><span class="skill-ico">📊</span> Core Competencies</h3>
+          <div class="chips">
+            <span class="chip">Data Analytics</span>
+            <span class="chip">Web Development</span>
+          </div>
+        </div>
+        <div class="glass skill-cat reveal">
+          <h3><span class="skill-ico">🛠️</span> Tools &amp; Frameworks</h3>
+          <div class="chips">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Flask</span>
+            <span class="chip">SQLite</span>
+          </div>
+        </div>
+        <div class="glass skill-cat reveal">
+          <h3><span class="skill-ico">🤖</span> AI Tools</h3>
+          <div class="chips">
+            <span class="chip">Claude</span>
+            <span class="chip">ChatGPT</span>
+            <span class="chip">GitHub Copilot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-bars reveal">
+        <div class="bar-row"><span>Python</span><div class="bar"><i style="--w:90%"></i></div></div>
+        <div class="bar-row"><span>Data Analytics</span><div class="bar"><i style="--w:85%"></i></div></div>
+        <div class="bar-row"><span>Web Development</span><div class="bar"><i style="--w:82%"></i></div></div>
+        <div class="bar-row"><span>SQL</span><div class="bar"><i style="--w:80%"></i></div></div>
+      </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section class="section" id="certifications">
+      <div class="section-head reveal">
+        <span class="eyebrow">03 — Credentials</span>
+        <h2 class="section-title">Certifications <span class="grad-text">Gallery</span></h2>
+        <p class="section-desc">A curated, ever-growing collection of professional certifications. Upload images, add credential links — fully extendable.</p>
+      </div>
+
+      <div class="cert-toolbar reveal">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="certSearch" placeholder="Search certifications…" />
+        </div>
+        <div class="filter-pills" id="certFilters">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="AI">AI</button>
+          <button class="pill" data-filter="Data">Data</button>
+          <button class="pill" data-filter="Cloud">Cloud</button>
+          <button class="pill" data-filter="Development">Development</button>
+          <button class="pill" data-filter="Simulation">Simulations</button>
+        </div>
+        <button class="btn btn-primary btn-sm" id="addCertBtn">＋ Add Certificate</button>
+      </div>
+
+      <div class="cert-grid" id="certGrid"><!-- injected by JS --></div>
+      <p class="empty-state" id="certEmpty" hidden>No certifications match your search.</p>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <span class="eyebrow">04 — Selected Work</span>
+        <h2 class="section-title">Featured <span class="grad-text">Projects</span></h2>
+      </div>
+
+      <div class="cert-toolbar reveal">
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="projSearch" placeholder="Search projects…" />
+        </div>
+        <div class="filter-pills" id="projFilters">
+          <button class="pill active" data-filter="all">All</button>
+          <button class="pill" data-filter="AI">AI</button>
+          <button class="pill" data-filter="Web">Web</button>
+          <button class="pill" data-filter="Python">Python</button>
+        </div>
+      </div>
+
+      <div class="proj-grid" id="projGrid"><!-- injected by JS --></div>
+      <p class="empty-state" id="projEmpty" hidden>No projects match your search.</p>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <span class="eyebrow">05 — Journey</span>
+        <h2 class="section-title">Work <span class="grad-text">Experience</span></h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="glass t-card">
+            <div class="t-top"><h4>Full Stack Development</h4><span class="t-date">May 2026 – Jun 2026</span></div>
+            <p class="t-org">Future Interns · Virtual Internship · Andhra Pradesh</p>
+            <ul>
+              <li>Developed a personal portfolio website using modern web technologies.</li>
+              <li>Built a mini CRM application for managing and tracking client leads.</li>
+              <li>Created a responsive restaurant website with reservation &amp; contact features.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="glass t-card">
+            <div class="t-top"><h4>Data Analytics</h4><span class="t-date">May 2026 – Jun 2026</span></div>
+            <p class="t-org">Thiranex Skill Development · Virtual Internship · Andhra Pradesh</p>
+            <ul>
+              <li>Built a Sales &amp; Revenue Dashboard for business performance analysis.</li>
+              <li>Performed customer segmentation &amp; predictive analytics using Python.</li>
+              <li>Automated data cleaning and reporting processes for improved efficiency.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="glass t-card">
+            <div class="t-top"><h4>Python Development</h4><span class="t-date">Jun 2026 – Jul 2026</span></div>
+            <p class="t-org">Yuva Intern · Virtual Internship · Andhra Pradesh</p>
+            <ul>
+              <li>Designed &amp; developed Python-based CLI applications for practical problem-solving.</li>
+              <li>Performed debugging, testing &amp; performance optimization for reliability.</li>
+              <li>Applied security best practices &amp; Continuous Integration (CI) concepts.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="glass t-card">
+            <div class="t-top"><h4>Cloud Computing</h4><span class="t-date">May 2026 – Jun 2026</span></div>
+            <p class="t-org">upSkills Camp · Virtual Internship · Andhra Pradesh</p>
+            <ul>
+              <li>Developed a File Organizer app to auto-categorize files into folders.</li>
+              <li>Built a Password Manager to securely store &amp; manage credentials.</li>
+              <li>Created an interactive Quiz Game to enhance user engagement.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GITHUB STATS ============ -->
+    <section class="section" id="github">
+      <div class="section-head reveal">
+        <span class="eyebrow">06 — Open Source</span>
+        <h2 class="section-title">GitHub <span class="grad-text">Activity</span></h2>
+      </div>
+      <div class="gh-grid reveal">
+        <div class="glass gh-card">
+          <img src="https://github-readme-stats.vercel.app/api?username=srilehkakada-dot&show_icons=true&hide_border=true&theme=transparent&title_color=a78bfa&icon_color=22d3ee&text_color=cbd5e1&bg_color=00000000" alt="GitHub stats" loading="lazy" />
+        </div>
+        <div class="glass gh-card">
+          <img src="https://github-readme-streak-stats.herokuapp.com/?user=srilehkakada-dot&hide_border=true&background=00000000&stroke=22d3ee&ring=a78bfa&fire=a78bfa&currStreakLabel=a78bfa&sideLabels=cbd5e1&dates=64748b&currStreakNum=cbd5e1&sideNums=cbd5e1" alt="GitHub streak" loading="lazy" />
+        </div>
+      </div>
+      <div class="glass gh-graph reveal">
+        <h3>Contribution Graph</h3>
+        <img src="https://github-readme-activity-graph.vercel.app/graph?username=srilehkakada-dot&theme=react-dark&hide_border=true&bg_color=00000000&color=a78bfa&line=22d3ee&point=ffffff&area=true" alt="GitHub contribution graph" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section" id="achievements">
+      <div class="section-head reveal">
+        <span class="eyebrow">07 — Highlights</span>
+        <h2 class="section-title">Achievements &amp; <span class="grad-text">Milestones</span></h2>
+      </div>
+      <div class="ach-grid">
+        <div class="glass ach-card reveal"><span class="ach-ico">🏆</span><h4>8.99 CGPA</h4><p>Maintaining top academic performance in B.Tech Computer Science.</p></div>
+        <div class="glass ach-card reveal"><span class="ach-ico">🎯</span><h4>96% in Intermediate</h4><p>Distinction in MPC at Aditya Women's College.</p></div>
+        <div class="glass ach-card reveal"><span class="ach-ico">📜</span><h4>10+ Certifications</h4><p>Google AI, Deloitte, EY, AWS, Third Bridge &amp; more.</p></div>
+        <div class="glass ach-card reveal"><span class="ach-ico">💼</span><h4>4 Internships</h4><p>Full Stack, Data Analytics, Python &amp; Cloud Computing.</p></div>
+        <div class="glass ach-card reveal"><span class="ach-ico">🤝</span><h4>Job Simulations</h4><p>Completed real-world simulations with Deloitte, EY &amp; Third Bridge via Forage.</p></div>
+        <div class="glass ach-card reveal"><span class="ach-ico">🚀</span><h4>4 Shipped Projects</h4><p>AI ChatBot, ATS Resume Checker, URL Shortener &amp; Creative Library.</p></div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <span class="eyebrow">08 — Say Hello</span>
+        <h2 class="section-title">Let's <span class="grad-text">Connect</span></h2>
+        <p class="section-desc">Open to internships, collaborations, and exciting opportunities. Let's build something great.</p>
+      </div>
+      <div class="contact-wrap">
+        <form class="glass contact-form reveal" id="contactForm">
+          <div class="field"><label>Name</label><input type="text" name="name" required placeholder="Your name" /></div>
+          <div class="field"><label>Email</label><input type="email" name="email" required placeholder="you@example.com" /></div>
+          <div class="field"><label>Message</label><textarea name="message" rows="4" required placeholder="Tell me about your opportunity…"></textarea></div>
+          <button type="submit" class="btn btn-primary">Send Message →</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+        <div class="contact-side reveal">
+          <a class="glass contact-link" href="mailto:srilehka.kada@gmail.com">
+            <span class="cl-ico">✉️</span><div><strong>Email</strong><p>srilehka.kada@gmail.com</p></div>
+          </a>
+          <a class="glass contact-link" href="tel:+918332848436">
+            <span class="cl-ico">📞</span><div><strong>Phone</strong><p>+91 83328 48436</p></div>
+          </a>
+          <a class="glass contact-link" href="https://www.linkedin.com/in/pooja-kada-733462376" target="_blank" rel="noopener">
+            <span class="cl-ico">💼</span><div><strong>LinkedIn</strong><p>in/pooja-kada</p></div>
+          </a>
+          <a class="glass contact-link" href="https://github.com/srilehkakada-dot" target="_blank" rel="noopener">
+            <span class="cl-ico">🐙</span><div><strong>GitHub</strong><p>srilehkakada-dot</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">PK</span>
+        <p>Building data-driven, intelligent software — one project at a time.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/srilehkakada-dot" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.8 18.3 5.1 18.3 5.1c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+        <a href="https://www.linkedin.com/in/pooja-kada-733462376" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+        <a href="mailto:srilehka.kada@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Kada Pooja Sai Srilekha. Designed &amp; built with care.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <!-- ====== Certificate / Image Modal ====== -->
+  <div class="modal" id="viewModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box glass">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <div class="modal-img-wrap"><img id="modalImg" src="" alt="Certificate preview" /></div>
+      <div class="modal-meta">
+        <h3 id="modalTitle"></h3>
+        <p id="modalOrg"></p>
+        <p id="modalDate" class="modal-date"></p>
+        <a id="modalLink" class="btn btn-primary btn-sm" target="_blank" rel="noopener" hidden>View Credential ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== Add Certificate Modal ====== -->
+  <div class="modal" id="addModal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-box glass add-box">
+      <button class="modal-close" data-close aria-label="Close">✕</button>
+      <h3>Add a Certificate</h3>
+      <p class="add-hint">Saved locally in your browser — perfect for building your gallery over time.</p>
+      <form id="addCertForm">
+        <div class="upload-zone" id="uploadZone">
+          <input type="file" id="certImageInput" accept="image/*" hidden />
+          <div class="uz-prompt" id="uzPrompt">
+            <span class="uz-ico">🖼️</span>
+            <p><strong>Upload certificate image</strong></p>
+            <small>Click or drag &amp; drop (PNG / JPG)</small>
+          </div>
+          <img id="uzPreview" class="uz-preview" hidden alt="preview" />
+        </div>
+        <div class="field"><label>Certificate Title *</label><input type="text" id="cTitle" required placeholder="e.g. Google AI Professional Certificate" /></div>
+        <div class="field"><label>Issuing Organization *</label><input type="text" id="cOrg" required placeholder="e.g. Coursera" /></div>
+        <div class="grid-2">
+          <div class="field"><label>Issue Date</label><input type="text" id="cDate" placeholder="e.g. May 2026" /></div>
+          <div class="field"><label>Category</label>
+            <select id="cCat">
+              <option>AI</option><option>Data</option><option>Cloud</option><option>Development</option><option>Simulation</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label>Credential Link (optional)</label><input type="url" id="cLink" placeholder="https://…" /></div>
+        <div class="add-actions">
+          <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Certificate</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
