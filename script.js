@@ -6,16 +6,16 @@
 
   /* ---------- Data: default certifications ---------- */
   const DEFAULT_CERTS = [
-    { id: 'c1', title: 'Google AI Professional Certificate', org: 'Coursera', date: 'Completed 7 Courses', cat: 'AI', link: '', img: '' },
+    { id: 'c1', title: 'Google AI Professional Certificate', org: 'Coursera', date: 'Completed 7 Courses', cat: 'AI', link: 'https://www.coursera.org/account/accomplishments/verify/EBKB658XV7QO', img: 'images/google_ai.pdf' },
     { id: 'c2', title: 'Google AI Essentials', org: 'Coursera', date: 'Completed 5 Courses', cat: 'AI', link: '', img: '' },
-    { id: 'c3', title: 'Full Stack Development Certificate', org: 'Future Interns', date: '2026', cat: 'Development', link: '', img: '' },
+    { id: 'c3', title: 'Full Stack Development Certificate', org: 'Future Interns', date: '2026', cat: 'Development', link: 'https://futureinterns.com/verification/?cin=FIT/MAY26/FS16115', img: 'images/future_Interns_certificate.pdf' },
     { id: 'c4', title: 'Data Analytics Internship Certificate', org: 'Thiranex', date: '2026', cat: 'Data', link: '', img: '' },
-    { id: 'c5', title: 'Cloud Computing Certificate', org: 'upSkills Camp', date: '2026', cat: 'Cloud', link: '', img: '' },
+    { id: 'c5', title: 'Cloud Computing Certificate', org: 'upSkills Camp', date: '2026', cat: 'Cloud', link: 'https://uniconvergetech9893.spayee.com/verify-certificate?serialno=2EY0ZR8G', img: 'images/upskills_camp_certificate.pdf' },
     { id: 'c6', title: 'Python Development Certificate', org: 'Yuva Interns', date: '2026', cat: 'Development', link: '', img: '' },
-    { id: 'c7', title: 'Data Analytics Job Simulation', org: 'Deloitte (Forage)', date: '2026', cat: 'Simulation', link: '', img: '' },
-    { id: 'c8', title: 'AWS SimuLearn: Cloud Computing Essentials', org: 'Amazon Web Services', date: '2026', cat: 'Cloud', link: '', img: '' },
-    { id: 'c9', title: 'Technology Risk Virtual Job Simulation', org: 'EY (Forage)', date: '2026', cat: 'Simulation', link: '', img: '' },
-    { id: 'c10', title: 'Client Service Delivery Job Simulation', org: 'Third Bridge (Forage)', date: '2026', cat: 'Simulation', link: '', img: '' }
+    { id: 'c7', title: 'Data Analytics Job Simulation', org: 'Deloitte (Forage)', date: '2026', cat: 'Simulation', link: 'https://www.theforage.com/simulations/Deloitte%20Australia/data-analytics-s5zy', img: 'images/data_analytics_certificate.pdf' },
+    { id: 'c8', title: 'AWS SimuLearn: Cloud Computing Essentials', org: 'Amazon Web Services', date: '2026', cat: 'Cloud', link: 'https://aws.amazon.com/training/?intClick=gsrc_navbar', img: 'images/AWS_certificate.pdf' },
+    { id: 'c9', title: 'Technology Risk Virtual Job Simulation', org: 'EY (Forage)', date: '2026', cat: 'Simulation', link: 'https://www.theforage.com/simulations/ey/technology-risk-ydqh', img: 'images/EY_certificate.pdf' },
+    { id: 'c10', title: 'Client Service Delivery Job Simulation', org: 'Third Bridge (Forage)', date: '2026', cat: 'Simulation', link: 'https://www.theforage.com/simulations/third-bridge/client-service-i3mi', img: 'images/third_bridge_certificate.pdf' }
   ];
 
   /* ---------- Data: projects ---------- */
@@ -25,28 +25,28 @@
       img: 'images/project-chatbot.png',
       desc: 'An offline conversational assistant built in Python with intelligent response handling and multiple utility features for efficient, accessible interactions.',
       tech: ['Python', 'NLP', 'CLI'],
-      github: 'https://github.com/srilehkakada-dot', demo: ''
+      github: 'https://github.com/23MH1A05F1/Multi-Functional-AI-Tool', demo: 'https://23mh1a05f1.github.io/Multi-Functional-AI-Tool/ammu'
     },
     {
       title: 'Creative Library', date: 'Jan 2026 – Feb 2026', cat: 'Web',
       img: 'images/project-library.png',
       desc: 'A responsive web platform for accessing technology learning resources, with a clean, user-friendly interface and seamless navigation.',
       tech: ['HTML', 'CSS', 'JavaScript'],
-      github: 'https://github.com/srilehkakada-dot', demo: ''
+      github: 'https://github.com/srilehkakada-dot/Creative-Library', demo: 'https://srilehkakada-dot.github.io/Creative-Library/'
     },
     {
       title: 'ATS Resume Checker', date: 'May 2026 – Jun 2026', cat: 'AI',
       img: 'images/project-ats.png',
       desc: 'Analyzes resumes for ATS compatibility with scoring and keyword evaluation, helping optimize job applications for applicant tracking systems.',
       tech: ['Python', 'NLP', 'Analytics'],
-      github: 'https://github.com/srilehkakada-dot', demo: ''
+      github: 'https://github.com/srilehkakada-dot/ATS-Resume-Checker', demo: 'https://sensational-caramel-dca04c.netlify.app'
     },
     {
       title: 'URL Shortener', date: 'May 2026 – Jun 2026', cat: 'Python',
       img: 'images/project-url.png',
       desc: 'A Flask + SQLite app generating custom short links with aliases and click-tracking analytics, deployed with efficient link redirection.',
       tech: ['Python', 'Flask', 'SQLite'],
-      github: 'https://github.com/srilehkakada-dot', demo: ''
+      github: 'https://github.com/srilehkakada-dot/url-shortener', demo: 'https://url-shortener-production-2abb.up.railway.app'
     }
   ];
 
