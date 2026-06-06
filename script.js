@@ -7,7 +7,7 @@
   /* ---------- Data: default certifications ---------- */
   const DEFAULT_CERTS = [
     { id: 'c1', title: 'Google AI Professional Certificate', org: 'Coursera', date: 'Completed 7 Courses', cat: 'AI', link: 'https://www.coursera.org/account/accomplishments/verify/EBKB658XV7QO', img: 'images/google_ai.png' },
-    { id: 'c2', title: 'Google AI Essentials', org: 'Coursera', date: 'Completed 5 Courses', cat: 'AI', link: '', img: '' },
+    { id: 'c2', title: 'Google AI Essentials', org: 'Coursera', date: 'Completed 5 Courses', cat: 'AI', link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/19KIUOV2A13G', img: 'images/google_essential.png' },
     { id: 'c3', title: 'Full Stack Development Certificate', org: 'Future Interns', date: '2026', cat: 'Development', link: 'https://futureinterns.com/verification/?cin=FIT/MAY26/FS16115', img: 'images/future_Interns_certificate.png' },
     { id: 'c4', title: 'Data Analytics Internship Certificate', org: 'Thiranex', date: '2026', cat: 'Data', link: '', img: '' },
     { id: 'c5', title: 'Cloud Computing Certificate', org: 'upSkills Camp', date: '2026', cat: 'Cloud', link: 'https://uniconvergetech9893.spayee.com/verify-certificate?serialno=2EY0ZR8G', img: 'images/upskill_camp_certificate.png' },
